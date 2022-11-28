@@ -43,7 +43,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 0 20px;
+        /*padding: 0 20px;*/
     }
     
     .wrapper .header .header-menu .title{
@@ -123,7 +123,7 @@
         border-radius: 50%;
     }
     .wrapper .sidebar .sidebar-menu .profile p{
-        color: #bbb;
+        color: #000;
         font-weight: 700;
         margin-bottom: 10px;
     }
@@ -135,7 +135,7 @@
     
     .wrapper .sidebar .sidebar-menu .item .menu-btn{
         display: block;
-        color: #fff;
+        color: #bbb;
         position: relative;
         padding: 25px 20px;
         transition: 0.3s;
@@ -166,11 +166,11 @@
     .wrapper .sidebar .sidebar-menu .item .sub-menu a{
         display: block;
         position: relative;
-        color: #fff;
+        color: rgb(14, 8, 8);
         white-space: nowrap;
         font-size: 15px;
         padding: 20px;
-        border-bottom: 1px solid #BFC5E9;
+        border-bottom: 1px solid #365f9e;
         transition: 0.3s;
         transition-property: background;
     }
@@ -194,7 +194,7 @@
         width: calc(100%-250px); /* .sidebar width is -> 250px */
         margin-top: 50px;
         margin-left: 250px;
-        background: url(https://github.com/mhmiyazi/AwesomeMenu/raw/main/dist/img/bg2.jpg) no-repeat center center;
+        background: url(https://img.freepik.com/free-vector/cooking-collection-background-fast-food_91128-1526.jpg?w=2000) no-repeat center center;
         background-size: cover;
         height: 100vh;
         transition: 0.3s;
