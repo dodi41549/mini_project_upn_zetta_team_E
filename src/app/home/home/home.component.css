@@ -184,7 +184,6 @@
             /* Main-container design start */
     .main-container{
         width: calc(100%-250px); /* .sidebar width is -> 250px */
-        margin-top: 50px;
         margin-left: 250px;
         background: url(https://img.freepik.com/free-vector/cooking-collection-background-fast-food_91128-1526.jpg?w=2000) no-repeat center center;
         background-size: cover;
