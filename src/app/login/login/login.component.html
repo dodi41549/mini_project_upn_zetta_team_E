@@ -1,135 +1,39 @@
-    <head>
-        <meta name="robots" content="follow,index" />
-        <meta
-      name="description"
-      content="🔐 An Open Source Template for Login Page From Scratch Without Any CSS Framework"
-    />
-    <meta name="keywords" content="login page css, login template, login css, login form template" />
-
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="https://mazipan.github.io/login-page-css/favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="https://mazipan.github.io/login-page-css/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="https://mazipan.github.io/login-page-css/favicon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="https://mazipan.github.io/login-page-css/manifest.json" />
-
-    <meta name="msapplication-TileColor" content="#00aeef" />
-    <meta name="theme-color" content="#00aeef" />
-    <link rel="manifest" href="https://mazipan.github.io/login-page-css/manifest.json" />
-
-    <!--<link rel="stylesheet" href="../shared/normalize.css" />-->
-    <link rel="stylesheet" href="login.component.css" />
-    <!--<link rel="stylesheet" href="style.css" />-->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap"
-      rel="stylesheet"
-    />
-    </head>
-    <!--wrapper start-->
-    <div class="wrapper">
-
-        <!--sidebar start-->
-        <div class="sidebar">
-            <div class="sidebar-menu">
-                <div class="profile">
-                    <img src="https://github.com/mhmiyazi/AwesomeMenu/blob/main/dist/img/1.jpg?raw=true" alt=""><p>Fast-Food</p>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+<div class="row">
+  <div class="col-6">
+    <img src="https://img.freepik.com/free-vector/cooking-collection-background-fast-food_91128-1526.jpg?w=2000" style="height:700px;width:720px;">
+  </div>
+  <div class="col-6">
+    <div id="login">
+        <h3 class="text-center pt-5 fs-1"><b>Login</b></h3>
+        <div class="container">
+            <div id="login-row" class="row justify-content-center align-items-center">
+                <div id="login-column" class="col-md-6">
+                    <div id="login-box" class="col-md-12">
+                        <form autocomplete="off" id="login-form" class="form" action="" method="post" [formGroup]="formLogin">
+                            <h3 class="text-center text-dark fs-3"></h3>
+                            <div class="form-group">
+                                <label for="username" class="text-dark">Username:</label><br>
+                                <input type="text" name="username" id="username" class="form-control " formControlName="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="password" class="text-dark">Password:</label><br>
+                                <input type="password" name="password" id="password" class="form-control" formControlName="password">
+                            </div>
+                            <div class="form-group">
+                                <label for="remember-me" class="text-dark"><span>Remember me</span> <span><input id="remember-me" name="remember-me" type="checkbox"></span></label><br>
+                            </div>
+                            <button type="submit" name="submit" class="btn btn-dark btn-md" (click)="onSubmit()">Submit</button>
+                            </form>
+                    </div>
                 </div>
-                <li class="item">
-                    <a href="home" class="menu-btn"><i class="fas fa-desktop"></i><span>Dashboard</span></a>
-                </li>
-                <li class="item" id="profile">
-                    <a href="login" class="menu-btn">
-                        <i class="fas fa-user-circle"></i><span>Login <i class="fas fa-chevron-down drop-down"></i></span>
-                    </a>
-                    <!--<div class="sub-menu">
-                        <a href="login/login.html"><i class="fas fa-sign-in-alt"></i><span>Sign In</span></a>
-                        <a href="#"><i class="fas fa-user-circle"></i><span>Sign Up</span></a>
-                    </div> -->
-                </li>
-                <li class="item" id="messege">
-                    <a href="menu" class="menu-btn">
-                        <i class="fas fa-box"></i><span>Menu <i class="fas fa-chevron-down drop-down"></i></span>
-                    </a>
-                    <!--<div class="sub-menu">
-                        <a href="#"><i class="fas fa-cookie"></i><span>Food</span></a>
-                        <a href="#"><i class="fas fa-envelope-square"></i><span>Recipe</span></a> -->
-                       <!-- <a href="#"><i class="fas fa-exclamation-circle"></i><span>Add New Recipe</span></a> 
-                    </div> -->
-                </li>
-                <li class="item" id="setting">
-                    <a href="cart" class="menu-btn">
-                        <i class="fas fa-cart-plus"></i><span>Cart <i class="fas fa-chevron-down drop-down"></i></span>
-                    </a>
-                    <!-- <div class="sub-menu">
-                        <a href="#"><i class="fas fa-list-alt"></i><span>Cart List</span></a>
-                        <a href="#"><i class="fas fa-receipt"></i><span>Recipe</span></a> 
-                    </div> -->
-                </li>
-                <li class="item">
-                    <a href="" class="menu-btn"><i class="fas fa-info-circle"></i><span>Shared</span></a>
-                </li>
             </div>
         </div>
-        <!--sidebar end-->
-                <!--header menu start-->
-        <div class="header">
-            <div class="header-menu">
-                <div class="title"><span class="title-hide">Restaurant<span class="sec-span"> Fast-Food</span></span></div>
-                <div class="sidebar-btn">
-                
-                </div>
-             <!--   <ul>
-                    <li><a href=""><i class="fas fa-search"></i></a></li>
-                    <li><a href=""><i class="fas fa-bell"></i></a></li>
-                    <li><a href=""><i class="fas fa-power-off"></i></a></li>
-                </ul> -->
-            </div>
-        </div>
-        <!--main container start-->
-        <div class="main-container">
-        <div class="app">
-            <main class="Layout">
-                <div class="LayoutContainer">
-                  <h3 class="title">LOGIN</h3>
-                  <form class="login-form">
-                    <div class="form-group">
-                      <input type="text" placeholder="Nomor Ponsel atau Email Anda" class="form-control" />
-                    </div>
-                    <div class="form-group">
-                      <div class="input-icon">
-                        <input type="password" placeholder="Password" class="form-control"  id="passwordd"/>
-                        <input type="checkbox" onclick="myFunction()">Show Password
-                        <script>
-                          function myFunction() {
-                            var x = document.getElementById("passwordd");
-                            if (x.type === "password") {
-                              x.type = "text";
-                            } else {
-                              x.type = "password";
-                            }
-                          }
-                          </script>
-                      </div>
-                    </div>
-                      <a href="home" class="kt-button">Masuk</a>
-                    </form>
-                  </div>
-                </main>
-              </div>
-        <!--header menu end-->
-        </div>
-        <!--main container end-->
     </div>
-    <!--wrapper end-->
+
+
+  </div>
+</div>
